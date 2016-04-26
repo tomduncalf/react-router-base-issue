@@ -1,8 +1,9 @@
 import * as React from 'react'
-import { Router, Route, useRouterHistory } from 'react-router'
+import { Router, Route, useRouterHistory, browserHistory } from 'react-router'
 import { createHistory } from 'history'
 
-const history = useRouterHistory(createHistory)({ basename: 'http://null.jsbin.com/poqige/' })
+const history = useRouterHistory(createHistory)({ basename: 'http://127.0.0.1:3000/' })
+//const history = browserHistory
 
 import App from 'components/App'
 import Hello from 'components/Hello'
